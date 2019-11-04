@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div is="page" id="home" data-role="page">
+        <div data-role="header" data-position="fixed" style="background: -webkit-linear-gradient(rgb(143,189,207),rgb(25,24,24));">
+            <h1 style="color: white;text-align: center;font-size: 24px;">蠟筆小新一家</h1>
+            <a class="ui-btn ui-btn-right ui-btn-icon-left ui-btn-icon ui-btn-icon-notext ui-corner-all ui-icon-gear" style="margin: 12px;"></a>
+        </div>
+        <div style="margin-top: 30px;" role="main" class="ui-content">
+            <div is="grid" class="ui-grid-b" style="height: 130px;">
+                <div class="ui-block-a" style="height: 100%;text-align: center">
+                    <a href="#A">
+                        <img src="images/home.png" style="width: 80px;margin: 5px 10px 5px 18px;">
+                        <h4 style="text-align: center; margin-top: 1px;">野原一家</h5>
+                    </a>
+                </div>
+
+                <div class="ui-block-b" style="height: 100%;text-align: center">
+                    <a href="#b">
+                        <img src="images/food.png" style="width: 80px;margin: 5px 10px 5px 18px;">
+                        <h4 style="text-align: center; margin-top: -5px;margin-left: 20px;">食物-最愛</h4>
+                    </a>
+                </div>
+                
+                <div class="ui-block-c" style="height: 100%;text-align: center">
+                    <a href="#c">
+                        <img src="images/friend.png" style="width: 80px;margin: 5px 10px 5px 18px;">
+                        <h4 style="text-align: center; margin-top: -5px;">同學&麻吉</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div is="grid" class="ui-grid-b" style="height: 130px">
+                <div class="ui-block-a" style="height: 100%;text-align: center">
+                    <a href="#d">
+                        <img src="images/maps.png" style="width: 80px;margin: 5px 20px 5px 32px;">
+                        <h4 style="text-align: center; margin-top: 1px;">我們的房子</h5>
+                    </a>
+                </div>
+
+                <div class="ui-block-b" style="height: 100%;text-align: center">
+                    <a href="#e">
+                        <img src="images/laugh.png" style="width: 80px;margin: 5px 20px 5px 32px;">
+                        <h4 style="text-align: center; margin-top: -5px;margin-left: 20px;">小新笑話</h4>
+                    </a>
+                </div>
+
+                <div class="ui-block-c" style="height: 100%;text-align: center">
+                    <a href="#f">
+                        <img src="images/money.png" style="width: 80px;margin: 5px 20px 5px 32px;">
+                        <h4 style="text-align: center; margin-top: -5px;">周邊商品</h4>
+                    </a>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                    <h1>@nfu 蠟筆小新-野原一家</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="A" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:navy;color: white;" data-role="list-divider">野原一家</li>
+            </ul> 
+            
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">野原新之助</a></li>
+                <li><a href="#p2">野原葵</a></li>
+                <li><a href="#p3">野原廣志</a></li>
+                <li><a href="#p4">野原美冴</a></li>
+                <li><a href="#p5">野原小白</a></li>
+            </ul>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>野原新之助</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><p>大家好，我是野原新之助，今年五歲，就讀雙葉幼稚園喔~</p></div>
+            <div style="text-align: center"><img src="images/her01.jpg" alt=""></div>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="p2">
+        <div data-role="header">
+            <h1>野原葵</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><p>大家好，我是小葵，最喜歡帥哥!</p></div>
+            <div style="text-align: center"><img src="images/her02.jpg" alt=""></div>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p3">
+        <div data-role="header">
+            <h1>野原廣志</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><p>大家好，我是野原廣志，今年35歲，是個上班族。</p></div>
+            <div style="text-align: center"><img src="images/her03.jpg" alt=""></div>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p4">
+        <div data-role="header">
+            <h1>野原美冴</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><p>大家好，我是野原美冴，今年35歲，是名家庭主婦!</p></div>
+            <div style="text-align: center"><img src="images/her04.jpg" alt=""></div>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p5">
+        <div data-role="header">
+            <h1>野原小白</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><p>大家好，我是野原小白。</p></div>
+            <div style="text-align: center"><img src="images/her05.jpg" alt=""></div>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div id="b" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:gold;color:black;" data-role="list-divider">食物-最愛</li>
+            </ul> 
+            
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">巧克比</a></li>
+                <li><a href="#p2">蛋糕</a></li>
+                <li><a href="#p3">熟食</a></li>
+                <li><a href="#p4">飲料</a></li>
+            </ul>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>巧克比</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/2-1.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p2">
+        <div data-role="header">
+            <h1>蛋糕</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/2-4.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p3">
+        <div data-role="header">
+            <h1>熟食</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/2-3.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p4">
+        <div data-role="header">
+            <h1>飲料</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/2-2.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div id="c" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:rgb(4, 0, 53);color: white;" data-role="list-divider">食物-最愛</li>
+            </ul> 
+                
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">風間</a></li>
+                <li><a href="#p2">阿呆</a></li>
+                <li><a href="#p3">正男</a></li>
+                <li><a href="#p4">妮妮</a></li>
+            </ul>
+        </div><!-- /content -->
+                
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>風間</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/3-1.jpg" alt=""></div>
+        </div><!-- /content -->
+                
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p2">
+        <div data-role="header">
+            <h1>阿呆</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+                
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/3-2.jpg" alt=""></div>
+        </div><!-- /content -->
+                
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+            
+    <div data-role="page" id="p3">
+        <div data-role="header">
+            <h1>正男</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+                
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/3-3.jpg" alt=""></div>
+        </div><!-- /content -->
+                
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+            
+    <div data-role="page" id="p4">
+        <div data-role="header">
+            <h1>妮妮</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+                
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/3-4.jpg" alt=""></div>
+        </div><!-- /content -->
+                
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div id="d" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:black;color: white;" data-role="list-divider">我們的房子</li>
+            </ul> 
+                    
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">我們的房子</a></li>
+            </ul>
+        </div><!-- /content -->
+                    
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>我們的房子</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/4-1.jpg" alt=""></div>
+        </div><!-- /content -->
+                    
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div id="e" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:gray;color:black;" data-role="list-divider">小新笑話</li>
+            </ul> 
+                
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">笑話一</a></li>
+                <li><a href="#p2">笑話二</a></li>
+                <li><a href="#p3">笑話三</a></li>
+            </ul>
+        </div><!-- /content -->
+        
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+        <div data-role="page" id="p1">
+            <div data-role="header">
+                <h1>笑話一</h1>
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+            </div><!-- /header -->
+        
+            <div role="main" class="ui-content">
+                <div style="text-align: center"><p>老師：「小新，請用『左右為難』來造句」
+                        小新：「我考試時左右為難」<br>
+                        老師：「是題目不會答，讓你左右為難？」
+                        小新：「不，是左右同學答案不一樣，讓我左右為難」</p></div>
+            </div><!-- /content -->
+                
+            <div data-role="footer">
+                <h4>@2019 虎科野原一家</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+        
+        <div data-role="page" id="p2">
+            <div data-role="header">
+                <h1>笑話二</h1>
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+            </div><!-- /header -->
+                
+            <div role="main" class="ui-content">
+                <div style="text-align: center"><p>美冴：「小新，要你補英語是希望你不要輸在起跑點上」<br>
+                        小新：「我早就輸在起跑點上了」
+                        美冴：「你輸了什麼？」<br>
+                        小新：「遺傳」</p></div>
+            </div><!-- /content -->
+                
+            <div data-role="footer">
+                <h4>@2019 虎科野原一家</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+            
+        <div data-role="page" id="p3">
+            <div data-role="header">
+                <h1>笑話三</h1>
+                <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+            </div><!-- /header -->
+                
+            <div role="main" class="ui-content">
+                <div style="text-align: center"><p>媽 ：「我以為你在寫功課，竟然是在玩電動」<br>
+                        小新：「這又不能怪我」
+                        媽 ：「難道要怪我？」<br>
+                        小新：「沒錯，誰叫你走路聲音那麼輕」</p></div>
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+    <div id="f" data-role="page">
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                <li style="font-size:25px;text-align:center;background-color:dodgerblue;color:gold;" data-role="list-divider">周邊商品</li>
+             </ul> 
+                
+            <ul data-role="listview" data-inset="true">
+                    <a href="#home" data-rel="back" class="ui-btn-lift ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button">Back</a>
+                <li><a href="#p1">手機殼</a></li>
+                <li><a href="#p2">USB隨身碟</a></li>
+                <li><a href="#p3">睡衣</a></li>
+                <li><a href="#p4">吊飾</a></li>
+                <li><a href="#p5">證件套</a></li>
+            </ul>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>手機殼</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/1.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="p2">
+        <div data-role="header">
+            <h1>USB隨身碟</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/2.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p3">
+        <div data-role="header">
+            <h1>睡衣</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/3.2.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p4">
+        <div data-role="header">
+            <h1>吊飾</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/4.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        
+    <div data-role="page" id="p5">
+        <div data-role="header">
+            <h1>證件套</h1>
+            <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+        </div><!-- /header -->
+            
+        <div role="main" class="ui-content">
+            <div style="text-align: center"><img src="images/5.jpg" alt=""></div>
+        </div><!-- /content -->
+            
+        <div data-role="footer">
+            <h4>@2019 虎科野原一家</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+</body>
+</html> 
